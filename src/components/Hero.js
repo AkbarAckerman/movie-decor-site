@@ -5,12 +5,14 @@ import heroImage from '../assets/hero-image.png';
 function Hero() {
   return (
     <section className="hero">
-      <img src={heroImage} alt="Film Reel" className="hero-img" />
-      <h1>ПРОИЗВОДСТВО ДЕКОРАЦИЙ ДЛЯ КИНО</h1>
-      <p className="subtitle">
-        Cгoдaйтe декорации для фильмов, видео и киносъёмки, <br />
-        сценическое рутoофтcтвoм, рaзгисиo роспиcй фасадов зданий
-      </p>
+      <div className="hero-content">
+        <img src={heroImage} alt="Film Reel" className="hero-img" />
+        <h1>ПРОИЗВОДСТВО ДЕКОРАЦИЙ ДЛЯ КИНО</h1>
+      </div>
+      <div className="subtitle">
+        Cгoдaйтe декорации для фильмов, видео и киносъёмки, сценическое рутoофтcтвoм,<br />
+        рaзгисиo роспиcй фасадов зданий
+      </div>
     </section>
   );
 }
