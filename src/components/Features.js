@@ -6,15 +6,15 @@ function Features() {
     <section className="features">
       <div className="feature">
         <div className="icon">🏛️</div>
-        <p>ЦЕЛЫЕ ГОРОДА</p>
+        <p>Проект</p>
       </div>
       <div className="feature">
-        <div className="icon">🗿</div>
-        <p>СКУЛЬПТУРЫ</p>
+        <div className="icon">🏭</div>
+        <p>Производство</p>
       </div>
       <div className="feature">
-        <div className="icon">🏺</div>
-        <p>СТАРЫЕ ЭПОХИ</p>
+        <div className="icon">🎥</div>
+        <p>Киносъемка</p>
       </div>
     </section>
   );
