@@ -1,13 +1,123 @@
-body {
+/* Reset and base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #fff8ec;
+  color: #1a1a1a;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 20px 0 10px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-section button {
+  background-color: #f15a22;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.feature-item {
+  text-align: center;
+  width: 150px;
+}
+
+.feature-item img {
+  width: 80px;
+  height: auto;
+}
+
+.feature-item h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .hero .text-content {
+    max-width: 60%;
+  }
+
+  .hero img {
+    max-width: 40%;
+  }
+
+  .form-section {
+    margin: 0;
+  }
+
+  .features {
+    justify-content: space-between;
+  }
 }

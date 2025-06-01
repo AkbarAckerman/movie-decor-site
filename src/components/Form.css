@@ -1,0 +1,25 @@
+.form-section {
+    margin: 40px auto;
+    max-width: 400px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button {
+    background-color: #f5540f;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
