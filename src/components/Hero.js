@@ -7,7 +7,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-content">
         <img src={heroImage} alt="Film Reel" className="hero-img" />
-        <h1>ПРОИЗВОДСТВО ДЕКОРАЦИЙ ДЛЯ КИНО</h1>
+        <h1>КИНОПРОЕКТ</h1>
       </div>
       <div className="subtitle">
         Coздaйтe декорированную локацию для проведения своего уникального мероприятия, кино и видеосъемки.
