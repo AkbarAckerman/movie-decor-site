@@ -9,7 +9,7 @@ function Features() {
         <p>Проект</p>
       </div>
       <div className="feature">
-        <div className="icon">🏭</div>
+        <div className="icon">🛠️</div>
         <p>Производство</p>
       </div>
       <div className="feature">

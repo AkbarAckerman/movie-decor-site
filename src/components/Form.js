@@ -36,7 +36,7 @@ function Form() {
     }
 
     // Send data via Formspree
-    const response = await fetch("https://formspree.io/f/xblyreeb", {
+    const response = await fetch("https://formspree.io/f/mkgbwaaq", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -59,7 +59,7 @@ function Form() {
       <p>Индивидуальный подход к каждому проекту — проектируем, строим, снимаем.</p>
 
       {submitted ? (
-        <p className="success">Спасибо! Ваша заявка отправлена.</p>
+        <p className="success">С вами свяжутся в ближайшее время.</p>
       ) : (
         <form onSubmit={handleSubmit}>
           <input
