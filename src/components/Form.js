@@ -36,7 +36,7 @@ function Form() {
     }
 
     // Send data via Formspree
-    const response = await fetch("https://formspree.io/f/mkgbwaaq", {
+    const response = await fetch("https://formspree.io/f/xvgrpjvr", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
