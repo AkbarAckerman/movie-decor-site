@@ -82,6 +82,15 @@
       gap: 20px;
       align-items: flex-start;
     }
+    .services-grid {
+      max-width: 360px;
+    }
+    .services-header{
+      padding-left: 30px;
+    }
+    .service-consult-btn{
+      display: none;
+    }
   }
   
 

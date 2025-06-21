@@ -80,7 +80,7 @@ function Portfolio() {
         ))}
       </div>
 
-      <div className="portfolio-contact">
+      {/* <div className="portfolio-contact">
   <h3 className="portfolio-contact__title">
     Оставьте заявку и получите индивидуальное предложение
   </h3>
@@ -97,7 +97,7 @@ function Portfolio() {
       Отправить заявку
     </button>
   </form>
-</div>
+</div> */}
 
       <div className="faq-section">
         <h2 className="faq-title">Часто задаваемые вопросы</h2>

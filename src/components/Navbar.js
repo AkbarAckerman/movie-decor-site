@@ -27,13 +27,13 @@ function Navbar() {
             <li><Link to="portfolio" smooth={true} duration={500} onClick={closeMenu}>Портфолио</Link></li>
             <li><Link to="contacts" smooth={true} duration={500} onClick={closeMenu}>Контакты</Link></li>
             <div className="mobile-extra">
-              <div className="phone mobile-phone">+7 (342) 342-42-42</div>
+              <div className="phone mobile-phone">+7 (495) 101-17-75</div>
               <button onClick={openModal} className="btn-contact mobile-btn">Связаться с нами</button>
             </div>
           </ul>
 
           <div className="navbar-right">
-            <div className="phone">+7 (342) 342-42-42</div>
+            <div className="phone">+7 (495) 101-17-75</div>
             <button onClick={openModal} className="btn-contact">Связаться с нами</button>
           </div>
 

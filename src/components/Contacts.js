@@ -133,7 +133,7 @@ function Contacts() {
         </div>
         <div className="footer-column">
           <h4>Наши контакты</h4>
-          <div className="big-phone">+7 (342) 342-42-42</div>
+          <div className="big-phone">+7 (495) 101-17-75</div>
           <div className='footer-email'>moskinopro@mail.ru</div>
           <p>г.Москва</p>
         </div>

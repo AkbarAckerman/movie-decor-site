@@ -159,6 +159,9 @@
       width: 100%;
       max-width: 300px;
     }
+    .consult-btn{
+      display: none;
+    }
   }
   
   
