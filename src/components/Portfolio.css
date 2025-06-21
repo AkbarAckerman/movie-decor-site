@@ -1,0 +1,240 @@
+.portfolio {
+    background-color: #c3c1b2;
+    padding: 100px 20px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-header h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .consult-btn {
+    background-color: #cd7744;
+    color: white;
+    border-radius: 999px;
+    padding: 22px 24px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .consult-btn:hover {
+    background-color: #b86132;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); /* initially transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 20px;
+  }
+  
+  .hover-text {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-card:hover .hover-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* darken effect */
+  }
+  
+  .portfolio-card:hover .hover-text {
+    opacity: 1;
+  }
+
+  .portfolio-contact {
+    background-color: #cd7744;
+    margin-top: 80px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+  }
+  
+  .portfolio-contact__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-contact__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .portfolio-contact__input,
+  .portfolio-contact__select,
+  .portfolio-contact__button {
+    font-family: 'Inter', sans-serif;
+    border-radius: 30px;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    outline: none;
+  }
+  
+  .portfolio-contact__input {
+    width: 250px;
+  }
+  
+  .portfolio-contact__select-wrapper {
+    width: 250px;
+  }
+  
+  .portfolio-contact__select {
+    width: 100%;
+    background-color: white;
+    color: #333;
+  }
+  
+  .portfolio-contact__button {
+    background-color: #e6e3d5;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .portfolio-contact__button:hover {
+    background-color: #d1cdbc;
+  }
+  
+  @media (max-width: 600px) {
+    .portfolio-contact__form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .portfolio-contact__input,
+    .portfolio-contact__select-wrapper,
+    .portfolio-contact__button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .portfolio-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+  
+
+  .faq-section {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 0 20px;
+  }
+  
+  .faq-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  .faq-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .faq-item {
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-item:hover .faq-question {
+    color: #555;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .faq-icon {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+  }
+  
+  .faq-item.open .faq-answer {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+  }
+  
+  /* Responsive */
+  @media (max-width: 800px) {
+    .faq-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

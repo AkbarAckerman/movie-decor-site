@@ -1,10 +1,6 @@
-body {
+body, html {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #fef7e8;
-  color: #000;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-.App {
-  text-align: center;
-  padding: 20px;
-}
+

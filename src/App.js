@@ -1,15 +1,19 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Services from './components/Services';
+import Portfolio from './components/Portfolio';
+import Contacts from './components/Contacts';
 import './App.css';
-import Hero from './components/Hero';
-import Form from './components/Form';
-import Features from './components/Features';
 
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <Form />
-      <Features />
+      <Navbar />
+      <Home />
+      <Services />
+      <Portfolio />
+      <Contacts />
     </div>
   );
 }
