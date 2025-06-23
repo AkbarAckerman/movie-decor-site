@@ -57,7 +57,7 @@ function Services() {
     <section id="services" className="services-section">
       <div className="services-header">
         <h2>Наши услуги</h2>
-        <a onClick={() => setIsModalOpen(true)} className="consult-btn">Получить консультацию</a>
+        {/* <a onClick={() => setIsModalOpen(true)} className="consult-btn">Получить консультацию</a> */}
       </div>
 
       <div className="services-grid">

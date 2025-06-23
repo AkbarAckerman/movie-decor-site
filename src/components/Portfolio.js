@@ -62,9 +62,9 @@ function Portfolio() {
     <section id="portfolio" className="portfolio">
       <div className="portfolio-header">
         <h2>Наши реализованные проекты</h2>
-        <button className="consult-btn" onClick={() => setIsModalOpen(true)}>
+        {/* <button className="consult-btn" onClick={() => setIsModalOpen(true)}>
           Получить консультацию
-        </button>
+        </button> */}
       </div>
 
       <div className="portfolio-grid">
