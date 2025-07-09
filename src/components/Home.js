@@ -9,27 +9,18 @@ function Home() {
 
   return (
 <section id="home" className="home-section">
-  <div className="dark-layer"></div>
+  {/* <div className="dark-layer"></div> */}
   <div className="hero-content">
-  <div className="hero-text-content">
-      <h1>
-        <span className="desktop-line">Строительство и декор любой<br />сложности</span>
-        <span className="mobile-line">Строительство и декор любой сложности</span>
-      </h1>
+    <div className="hero-text-content">
+      <h1>Строительство декораций<br />любой сложности</h1>
       <p>
-        <span className="desktop-line">
-          Строительство любой сложности – от идей до воплощения под ключ! Полный цикл услуг,
-          опытные художники и точный контроль на<br />каждом этапе.
-        </span>
-        <span className="mobile-line">
-          Строительство любой сложности – от идей до воплощения под ключ! Полный цикл услуг,
-          опытные художники и точный контроль на каждом этапе.
-        </span>
+        Реализуем проекты от идеи до воплощения, под ключ!<br />
+        Полный цикл услуг, опытные художники и точный контроль на каждом этапе.
       </p>
     </div>
     <button className="btn" onClick={() => setIsModalOpen(true)}>
-          Получить консультацию
-        </button>
+      Получить консультацию
+    </button>
   </div>
   
   {isModalOpen && <ModalForm onClose={() => setIsModalOpen(false)} />}

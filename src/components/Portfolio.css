@@ -1,7 +1,6 @@
 .portfolio {
     background-color: #c3c1b2;
     padding: 100px 20px;
-    font-family: 'Inter', sans-serif;
   }
   
   .portfolio-header {
@@ -113,7 +112,6 @@
   .portfolio-contact__input,
   .portfolio-contact__select,
   .portfolio-contact__button {
-    font-family: 'Inter', sans-serif;
     border-radius: 30px;
     padding: 14px 20px;
     font-size: 16px;

@@ -2,31 +2,38 @@ import React, { useState } from 'react';
 import ModalForm from './ModalForm';
 import './Services.css';
 
+// Icons (replace with your real paths)
+import icon1 from '../icons/Icon1.svg';
+import icon2 from '../icons/Icon2.svg';
+import icon3 from '../icons/Icon3.svg';
+import icon4 from '../icons/Icon4.svg';
+import icon5 from '../icons/Icon5.svg';
+
 const servicesData = [
   {
-    number: 1,
+    icon: icon1,
     title: 'Строительство декораций для кинофильмов',
-    description: 'Декор-каркасы, интерьеры, экстерьеры',
+    description: 'Декор-каркасы, интерьеры, экстерьеры.',
   },
   {
-    number: 2,
+    icon: icon2,
     title: 'Художественное оформление',
     description: 'Эксклюзивная художественная отделка интерьера со строительством стен и фасадов любой сложности.',
   },
   {
-    number: 3,
+    icon: icon3,
     title: 'Реставрация и реконструкция объектов',
-    description: 'Патинирование, стилизация под старину',
+    description: 'Патинирование, стилизация под старину.',
   },
   {
-    number: 4,
+    icon: icon4,
     title: 'Благоустройство территорий',
-    description: 'Парки и локации под ключ',
+    description: 'Парки и локации под ключ.',
   },
   {
-    number: 5,
+    icon: icon5,
     title: 'Дизайнерские фасадные решения',
-    description: 'Создание эксклюзивных художественных фресок',
+    description: 'Создание эксклюзивных художественных фресок.',
   },
 ];
 
@@ -61,13 +68,18 @@ function Services() {
       </div>
 
       <div className="services-grid">
-        {servicesData.map((service) => (
-          <div key={service.number} className="service-card">
-            <div className="service-number">{service.number}</div>
+        {servicesData.map((service, idx) => (
+          <div key={idx} className="service-card">
+            <img src={service.icon} alt="icon" className="service-icon" />
+            <div className="divider-line"></div>
             <div className="service-title">{service.title}</div>
             <div className="service-desc">{service.description}</div>
           </div>
         ))}
+
+        <div className="service-card consult-card" onClick={() => setIsModalOpen(true)}>
+          <div className="consult-text">Получить консультацию</div>
+        </div>
       </div>
 
       <div className="comfort-block">
