@@ -128,8 +128,24 @@ function Contacts() {
         </div>
         <div className="footer-column">
           <h4>Всегда на связи:</h4>
-          <p className='social-media'>Telegram</p>
-          <p className='social-media'>WhatsApp</p>
+          {/* <p className='social-media'>
+    <a
+      href="https://t.me/Miracle_mlbb"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Telegram
+    </a>
+  </p> */}
+  <p className='social-media'>
+    <a
+      href="https://wa.me/79233839999"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      WhatsApp
+    </a>
+  </p>
         </div>
         <div className="footer-column">
           <h4>Наши контакты</h4>
