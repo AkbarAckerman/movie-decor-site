@@ -36,7 +36,7 @@ function Navbar() {
 
           <div className="navbar-right">
             {/* <div className="phone">+7 (495) 101-17-75</div> */}
-            <button onClick={openModal} className="btn-contact">Консультация</button>
+            {/* <button onClick={openModal} className="btn-contact">Консультация</button> */}
           </div>
 
           <div className="burger" onClick={toggleMenu}>
