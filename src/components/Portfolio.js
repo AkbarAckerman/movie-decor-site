@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ModalForm from './ModalForm'; // обязательно укажи правильный путь
+import ModalForm from './ModalForm';
 
 import './Portfolio.css';
 
@@ -7,15 +7,16 @@ import project1 from '../assets/project1.jpeg';
 import project2 from '../assets/project2.jpg';
 import project3 from '../assets/project3.jpeg';
 import project4 from '../assets/project4.jpeg';
+import project5 from '../assets/project5.jpg';
 
 const projects = [
   {
     img: project1,
-    text: 'Выполнили комплексное оформление: от проектирования дизайна до финальной отделки. Результат – современный облик объекта.',
+    text: 'Комплексное оформление: от проектирования дизайна до финальной отделки.',
   },
   {
     img: project2,
-    text: 'Благоустроили территорию парка, создав уютное пространство для отдыха жителей города.',
+    text: 'Благоустройство территорию парка, создав уютное пространство для отдыха жителей города.',
   },
   {
     img: project3,
@@ -23,7 +24,11 @@ const projects = [
   },
   {
     img: project4,
-    text: 'Выполнили работы по патинированию фасада здания.',
+    text: 'Успешно завершили работы по патинированию фасада здания.',
+  },
+  {
+    img: project5,
+    text: 'Проведена работа по патинированию фасада.',
   },
 ];
 
@@ -78,6 +83,10 @@ function Portfolio() {
             )}
           </div>
         ))}
+
+        <div className="portfolio-card consult-card" onClick={() => setIsModalOpen(true)}>
+          <div className="consult-text">Получить консультацию</div>
+        </div>
       </div>
 
       {/* <div className="portfolio-contact">
@@ -99,7 +108,7 @@ function Portfolio() {
   </form>
 </div> */}
 
-      <div className="faq-section">
+      {/* <div className="faq-section">
         <h2 className="faq-title">Часто задаваемые вопросы</h2>
         <div className="faq-list">
           {faqData.map((item, index) => (
@@ -118,7 +127,7 @@ function Portfolio() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Модалка */}
       {isModalOpen && <ModalForm onClose={() => setIsModalOpen(false)} />}

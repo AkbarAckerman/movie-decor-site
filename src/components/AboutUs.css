@@ -12,15 +12,21 @@
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
-    border-top: 2px solid #c58c5d;
-    border-bottom: 2px solid #c58c5d;
-    padding: 40px 0;
   }
   
   .aboutus-text {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
+  }
+
+  .devine-line-top{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .devine-line-bottom{
+    width: 100%;
   }
   
   .aboutus-text h2 {
@@ -35,6 +41,7 @@
     font-weight: 400;
     color: #000000;
     line-height: 1.6;
+    margin-bottom: 40px;
   }
   
   .aboutus-image {
@@ -67,6 +74,17 @@
   
     .aboutus-image img {
       border-radius: 16px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .devine-line-top{
+      width: 100%;
+
+    }
+  
+    .devine-line-bottom{
+      width: 100%;
     }
   }
   

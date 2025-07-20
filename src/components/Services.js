@@ -9,6 +9,8 @@ import icon3 from '../icons/Icon3.svg';
 import icon4 from '../icons/Icon4.svg';
 import icon5 from '../icons/Icon5.svg';
 
+import DevineBlackLine from '../icons/devine_black_line.svg';
+
 const servicesData = [
   {
     icon: icon1,
@@ -48,7 +50,7 @@ const comfortData = [
     button: 'Получить консультацию',
   },
   {
-    title: 'Прозрачные условия и контроль на всех этапах строительства.',
+    title: 'Прозрачные условия',
     // description: 'Индивидуальное проектирование под ваши пожелания.',
   },
   {
@@ -71,7 +73,7 @@ function Services() {
         {servicesData.map((service, idx) => (
           <div key={idx} className="service-card">
             <img src={service.icon} alt="icon" className="service-icon" />
-            <div className="divider-line"></div>
+            <img src={DevineBlackLine} alt="divider" className="divider-line" />
             <div className="service-title">{service.title}</div>
             <div className="service-desc">{service.description}</div>
           </div>
