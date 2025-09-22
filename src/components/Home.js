@@ -8,8 +8,11 @@ function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
+    
+    
 <section id="home" className="home-section">
   {/* <div className="dark-layer"></div> */}
+  
   <div className="hero-content">
     <div className="hero-text-content">
       <h1>Строительство декораций<br />любой сложности</h1>

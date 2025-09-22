@@ -10,12 +10,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <h1 className='error'>САЙТ НЕ РАБОТАЕТ</h1>
+      {/* 
       <Navbar />
       <Home />
       <AboutUs/>
       <Services />
       <Portfolio />
       <Contacts />
+      */}
     </div>
   );
 }
